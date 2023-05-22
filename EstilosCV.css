@@ -1,0 +1,23 @@
+body {
+    color: rgb(187, 238, 241);
+    padding: 20px 50px 500px 20px;
+    font-size: 120%;
+}
+
+html {
+    background: linear-gradient(145deg, rgb(62, 14, 196) 30%, rgba(0,212,255,1) 100%);;
+}
+
+.lista {
+    border: 2px solid rgba(0,212,255,1);
+    border-radius: 10px; 
+    border-left-width: 50px;
+}
+
+.etiquetas {
+    color: burlywood;
+}
+
+#fuente {
+    text-align: right;
+}
