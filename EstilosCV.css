@@ -1,7 +1,7 @@
 body {
     color: rgb(187, 238, 241);
-    padding: 20px 50px 500px 20px;
-    font-size: 120%;
+    padding: 20px 20px 50px 20px;
+    font-size: 2vw;
 }
 
 html {
@@ -22,3 +22,20 @@ html {
     text-align: right;
 }
 
+a {
+    color: burlywood ;
+}
+
+h1 {
+    background-image: url('https://thumbs.dreamstime.com/z/banner-de-programaci%C3%B3n-web-concepto-tecnolog%C3%ADa-conexiones-personas-negocios-internet-medios-mixtos-219287770.jpg');
+
+    margin: 20px 0 20px 0;
+    text-align: center;
+    padding: 50px 0 50px 0;
+    font-size: 6vw;
+    background-repeat: no-repeat;
+    background-size:100%;
+    border: 2px solid white;
+    -webkit-text-stroke: 1px purple;
+    text-shadow: 3px 3px 1px black;
+}
