@@ -52,3 +52,8 @@ h1 {
     column-count: 2;
     
 }
+
+#volver {
+    font-size: 1.5vw;
+    text-align: right;
+}
