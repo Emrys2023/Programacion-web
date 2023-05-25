@@ -120,20 +120,21 @@
 
     <p>&lt;input type="submit" value="Enviar"&gt;:  <input type="submit" value="Enviar"> (Crea un boton de texto).</p>
 
-    <h3>Ejemplo de formulario:</h3>
-
-    <form action="ejemplo.php" method="get">
-        <p>Nombre: <input class="input" type="text" name="nombre" size="40"></p>
-        <p>Año de nacimiento: <input class="input" type="number" name="nacido" min="1900"></p>
-        <p>Sexo:
-          <input type="radio" name="hm" value="h"> Hombre
-          <input type="radio" name="hm" value="m"> Mujer
-        </p>
-        <p>
-          <input type="submit" value="Enviar">
-          <input type="reset" value="Borrar">
-        </p>
-    </form>
+    <fieldset>
+        <legend>Ejemplo de formulario</legend>
+        <form action="ejemplo.php" method="get">
+            <p>Nombre: <input class="input" type="text" name="nombre" size="40"></p>
+            <p>Año de nacimiento: <input class="input" type="number" name="nacido" min="1900"></p>
+            <p>Sexo:
+            <input type="radio" name="hm" value="h"> Hombre
+            <input type="radio" name="hm" value="m"> Mujer
+            </p>
+            <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+            </p>
+        </form>
+    </fieldset>
 
     <h2>Imagen con mas etiquetas:</h2>
     
