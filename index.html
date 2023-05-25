@@ -12,7 +12,7 @@
 
     <h1 id="inicio">Programación web semi junior</h1>
     <hr/>
-    <p><a href="#etHTML"  style="text-decoration:none"><strong> HTML</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#VSC"  style="text-decoration:none"><strong> Studio Code</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#css"  style="text-decoration:none"><strong>CSS</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#javascript"  style="text-decoration:none"><strong>JavaScript</strong></a></p>
+    <p><a href="#etHTML"  style="text-decoration:none"><strong> HTML</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#VSC"  style="text-decoration:none"><strong> Visual Studio Code</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#css"  style="text-decoration:none"><strong>CSS</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#javascript"  style="text-decoration:none"><strong>JavaScript</strong></a></p>
     <hr>
     <h2 id="etHTML">Etiquetas HTML</h2>
     <p>HTML es un markup language, lo que significa que está escrito con códigos que puede leer una persona sin que sea necesario compilarlo primero. En otras palabras, el texto en una página web está «marcado» con estos códigos para dar instrucciones al navegador web sobre cómo mostrar el texto. Estas etiquetas de marcado son las propias etiquetas HTML.</p>
@@ -37,6 +37,7 @@
             <li><a href="#etsection"><strong>&lt;section&gt;</strong></a> El elemento Contenido del artículo</li>
             <li><a href="#etheader"><strong>&lt;header&gt;</strong></a> Encabezado</li>
             <li><a href="#etfooter"><strong>&lt;footer&gt;</strong></a> Pie de pagina</li>
+            <li><a href="#etfooter"><strong>&lt;form y button&gt;</strong></a> Representa un formulario y crea botones</li>
         </ul>
     </div>    
     <br>
@@ -100,7 +101,43 @@
     <p>Representa una sección independiente genérica de un documento, que no tiene un elemento semántico más específico para representarlo. Las secciones siempre deben tener un encabezado, con muy pocas excepciones.</p>
 
     <h2 id= "etfooter" class="etiquetas"><strong>&lt;footer&gt;</strong><strong>&lt;/footer&gt;</strong></h2>    
-    <p>Representa un pie de página para su ancestro más cercano que secciona el contenido o secciona el elemento raíz . Por lo general, contiene información sobre el autor de la sección, datos de derechos de autor o enlaces a documentos relacionados.</p>    
+    <p>Representa un pie de página para su ancestro más cercano que secciona el contenido o secciona el elemento raíz . Por lo general, contiene información sobre el autor de la sección, datos de derechos de autor o enlaces a documentos relacionados.</p>
+
+    <h2 id= "etform" class="etiquetas"><strong>&lt;form&gt;</strong><strong>&lt;/form&gt;</strong></h2>    
+    <p>Un formulario es un conjunto de controles (botones, cajas de texto, casillas de verificación, botones radio, etc) que permiten al usuario introducir datos y enviarlos al servidor web para su procesamiento.</p>
+
+    <p>La etiqueta form se utiliza para crear un formulario interactivo que permite a los usuarios enviar datos al servidor. Sirve como un contenedor para agrupar y organizar los diferentes elementos del formulario, como campos de entrada de texto, botones, casillas de verificación, listas desplegables, etc.</p>
+
+    <p>Los atributos mas importantes son action y method. El action es donde se va a ir la informacion y el method define la manera de enviar los datos al servidor</p>
+
+    <p>Los etiquetas que crean los controles en los formularios son input, button, select, optgroup, option y textarea. Además, se pueden estructurar los controles con las etiquetas fieldset y legend. Por último, la etiqueta label permite mejorar la accesibilidad de los controles.</p>
+
+    <p>Ejemplos:</p>
+
+    <p>&lt;input type="text" name="nombre" size="40"&gt;:  <input type="text" name="nombre" size="40">   (Crea un cuadro alfanumerico).</p>
+
+    <p>&lt;input type="radio" name="hm" value="m"&gt;:  <input type="radio" name="hm" value="m"> (Crea un check button).</p>
+
+    <p>&lt;input type="submit" value="Enviar"&gt;:  <input type="submit" value="Enviar"> (Crea un boton de texto).</p>
+
+    <h3>Ejemplo de formulario:</h3>
+
+    <form action="ejemplo.php" method="get">
+        <p>Nombre: <input type="text" name="nombre" size="40"></p>
+        <p>Año de nacimiento: <input type="number" name="nacido" min="1900"></p>
+        <p>Sexo:
+          <input type="radio" name="hm" value="h"> Hombre
+          <input type="radio" name="hm" value="m"> Mujer
+        </p>
+        <p>
+          <input type="submit" value="Enviar">
+          <input type="reset" value="Borrar">
+        </p>
+    </form>
+
+    <h2>Imagen con mas etiquetas:</h2>
+    
+    <img id="imgetiquetas" src="html.jpeg" alt="imagen con mas etiquetas">    
 
     <p id="volver"><a href="#inicio">volver al inicio</a></p>
 
