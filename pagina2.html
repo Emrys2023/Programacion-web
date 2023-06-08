@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programacion web semi-junior</title>
+    <link rel="stylesheet" href="EstilosCV.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/?size=512&id=59898&format=png">
+</head>
+<body>
+
+    <h1 id="inicio">Programación web semi junior</h1>
+    <hr/>
+    <p><a href="index.html"  style="text-decoration:none"><strong> HTML</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html#VSC"  style="text-decoration:none"><strong> Visual Studio Code</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#css"  style="text-decoration:none"><strong>CSS</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html#javascript"  style="text-decoration:none"><strong>JavaScript</strong></a></p>
+    <hr><br>
+
+    <h2 id="css">CSS</h2>
+
+    <p>Las siglas CSS (Cascading Style Sheets) significan «Hojas de estilo en cascada» y parten de un concepto simple pero muy potente: aplicar estilos (colores, formas, márgenes, etc...) a uno o varios documentos (generalmente documentos HTML, páginas webs) de forma automática y masiva.</p>
+
+    <p>Se le denomina estilos en cascada porque se lee, procesa y aplica el código desde arriba hacia abajo (siguiendo un patrón denominado herencia que trataremos más adelante) y en el caso de existir ambigüedad (código que se contradice), se siguen una serie de normas para resolver dicha ambigüedad.</p><br>
+
+    <table>
+        <thead>
+        <tr>
+        <th>Concepto</th>
+        <th>Descripción</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td class="linea-impar"><strong>Selector</strong></td>
+        <td class="linea-impar">Elemento o elementos del documento que vamos a <strong>seleccionar</strong> para aplicarle un estilo concreto.</td>
+        </tr>
+        <tr>
+        <td class="linea-par"><strong>Propiedad</strong></td>
+        <td class="linea-par"><strong>Característica principal</strong> que vamos a definir con el valor indicado a continuación.</td>
+        </tr>
+        <tr>
+        <td class="linea-impar"><strong>Valor</strong></td>
+        <td class="linea-impar">Cada <strong>propiedad</strong> tiene una serie de valores concretos asignables, con los que tendrá uno u otro comportamiento.</td>
+        </tr>
+        <tr>
+        <td class="linea-par"><strong>Comentario</strong></td>
+        <td class="linea-par">Fragmento de texto entre <code>/*</code> y <code>*/</code> con anotaciones o aclaraciones para el desarrollador (el navegador los ignorará).</td>
+        </tr>
+        <tr>
+        <td class="linea-impar"><strong>Regla</strong></td>
+        <td class="linea-impar">Par de <strong>propiedad</strong> y su respectivo <strong>valor</strong> asociado.</td>
+        </tr>
+        </tbody>
+    </table><br>
+
+    <img id="estructura" src="https://lenguajecss.com/css/introduccion/estructura-de-css/sintaxis-visual.png" alt="imagen de estructura CSS">
+
+    <h3>Ejemplo:</h3>
+    <div id="cuadro">
+        <p>p { <br>
+        <p class="texto-css">color: red; /* Color de texto */</p>    
+        <p>}</p>
+    </div>
+
+    <h2>Principales propiedades CSS</h2>
+
+    <div class="lista">
+        <ul>
+            <li><a href="#etbody"><strong>Font-family:</strong></a> Define la familia tipográfica</li>
+            <li><a href="#ethead"><strong>Font-size:</strong></a> Define el tamaño de la fuente</li>
+            <li><a href="#etdiv"><strong>Color y background-color:</strong></a> Color define el color de la tipografía y background-color, el color de fondo de un elemento</li>
+            <li><a href="#eta"><strong>Width:</strong></a> Define el ancho de un elemento</li>
+            <li><a href="#etstrong"><strong>Max-width o min-width: </strong></a> Definen el ancho máximo o mínimo de un elemento</li>
+            <li><a href="#etbr"><strong>Height:</strong></a>Define el alto de un elemento</li>
+            <li><a href="#eth1h6"><strong>Max-height o min-height:</H6></strong></a> Definen el alto máximo o mínimo de un elemento</li>
+            <li><a href="#etimg"><strong>Padding:</strong></a> Es la distancia desde el borde de un elemento hasta su contenido</li>
+            <li><a href="#etolul"><strong>Margin:</strong></a> Es la distancia entre un elemento y otro</li>
+            <li><a href="#etp"><strong>Border:</strong></a>Define el borde de un elemento</li>
+            <!-- <li><a href="#etspan"><strong></strong></a> </li>
+            <li><a href="#etem"><strong></strong></a> </li>
+            <li><a href="#ethr"><strong></strong></a> </li>
+            <li><a href="#etarticle"><strong></strong></a> </li>
+            <li><a href="#etsection"><strong></strong></a> </li>
+            <li><a href="#etheader"><strong></strong></a> </li>
+            <li><a href="#etfooter"><strong></strong></a> </li>
+            <li><a href="#etform"><strong></strong></a> </li> -->
+        </ul>
+    </div>
+
+    <br>
+    <h2 id= "etbody" class="etiquetas"><strong>Font-family:</strong></h2>
+    <p>Define la familia tipográfica. Tenemos 3 opciones para definir la elección de la familia tipográfica: <br><br>
+
+    1) usar una de las fuentes más comunes (web safe fonts) que muy probablemente tenga instalada el usuario (Arial, Verdana, Trebuchet, Georgia, san serif, Times, etc). Si elegimos esta opción es conveniente poner una lista de dos o tres tipografías separadas por coma, porque si el usuario no tiene instalada la tipografía que nosotros elegimos, el navegador opta por mostrar la siguiente que debería ser una similar, si tampoco la tiene instalada, mostrará la tipografía por defecto. Esta opción es la más eficiente en cuanto al tiempo de carga de la página, pero muy limitada en cuanto a diseño.<br><br>
+    2) usar una fuente de Google Font, que en este momento es lo más recomendable. No es necesario que el usuario tenga instalada la fuente, porque el navegador la llama del servidor de Google. Tampoco se necesita para maquetar, por la misma razón. El sitio es: https://fonts.google.com/. Por lo general en un sitio se utilizan dos fuentes, una para títulos y otra para textos, con algunas variables. Pero hay que tener en cuenta que cada fuente y cada variable que agreguemos hace más lenta la carga de la página.<br><br>
+
+    3) subir nuestra propia fuente con la propiedad  @font-face. Esta opción es sólo recomendable si tenemos la licencia de una fuente o necesitamos una fuente que no se encuentre en el sitio de Google. Es necesario subir el archivo de la fuente por FTP y declarar la fuente definiendo como mínimo un nombre a la familia y la ruta del archivo. Ejemplo:</p>
+
+    <h2 id= "ethead" class="etiquetas"><strong>Font-size:</strong></h2>
+    <p>El valor se puede escribir en pixels o rems. En este momento se recomienda usar rems por una cuestión de usabilidad. Los dos son valores relativos, el pixel es un valor relativo a la resolución de la pantalla, pero el rem es relativo al tamaño de la fuente definida por el usuario en el navegador. Si el usuario no cambió la configuración, el valor por defecto de los textos en todos los navegadores es de 16px. Entonces 1rem = 16px. Pero si el usuario decide que su fuente por defecto es 20px, entonces 1rem=20px. La idea de que los textos se adapten a las necesidades del usuario es muy buena, pero como en la práctica no todos los sitios lo implementan, la realidad es que es más práctico que el usuario utilice el zoom del navegador cuando lo necesite.</p>
+
+    <h2 id= "etdiv" class="etiquetas"><strong>Color y background-color:</strong></h2>
+    <p>Los colores se pueden escribir de varias formas, las más utilizadas son:<br><br>
+
+    <b>Sistema hexadecimal</b>, por ejemplo: #FF0000 (es rojo). Son 3 pares de caracteres que corresponden a RGB. Si los pares repiten sus caracteres, se puede resumir en 3 por ejemplo: #F00 también es el mismo rojo. La escala que se utiliza es la siguiente: 0987654321ABCDEF donde 0 es negro y F es blanco, por lo tanto: #000 es negro y #FFF es blanco. Hay muchos sitios que generan paletas de colores para web, el que recomiendo es: https://coolors.co/<br><br>
+        
+    <b>Nombres de los colores</b> (más limitado) por ejemplo: black, red, green.<br><br>
+        
+    <b>RGB y RGBA</b>, esta opción permite agregar el canal alfa para hacer transparencias, por ejemplo: backgrund-color: rgba(255, 255,255,.3) ese color es blanco con 30% de transparencia.</p>
+
+    <h2 id= "eta" class="etiquetas"><strong>Width:</strong></h2>
+    <p>El valor se puede escribir en pixels, rems o porcentaje. Las etiquetas de bloque tienen por defecto un width de 100%.</p>
+
+    <h2 id= "etstrong" class="etiquetas"><strong>Max-width o min-width: </strong></h2>
+    <p>Muy importante para adaptar el sitio a los diferentes tamaños de pantalla. Por ejemplo:</p>
+    <p class="cuadro">div.container {max-width:1200px; margin: 0 auto}</p>
+    <p>La regla anterior define un ancho máximo para un container de 1.200px (y además lo centra con margin). Si no definimos un ancho, la div ocupa por defecto el 100% del espacio horizontal pero si lo queremos limitar, utilizamos max-width:1200px para que no supere esa medida pero se adapte si la pantalla es menor. En cambio si usáramos whidth: 1200px, en un celular no se adaptaría y la página haría scroll horizontal.</p>
+
+    <h2 id= "etbr" class="etiquetas"><strong>Height:</strong></h2>
+    <p>El valor se puede escribir en pixels, rems o porcentaje. Esta propiedad hay que usarla con cuidado porque es preferible dejar las cajas con altura sin definir para que se estiren automáticamente cuando el contenido se modifique o se acomode a otros dispositivos.</p>
+
+    <h2 id= "eth1h6" class="etiquetas"><strong>Max-height o min-height: </strong></h2>
+    <p>Definen el alto máximo o mínimo de un elemento. Por ejemplo:</p>
+    <p class="cuadro">.content {min-height: 300px}</p>
+    <p>Esta regla puede ser necesaria en una página con muy poco contenido (por ejemplo el resultado de una búsqueda sin coincidencias), para que tenga un mínimo de altura y deje espacio entre la cabecera y el footer.</p>
+
+    <h2 id= "etimg" class="etiquetas"><strong>Padding:</strong></h2>
+    <p> Esta propiedad es imprescindible si la caja tiene color de fondo o borde. Si no lo tiene, se vería igual usando margin para generar los espacios. Hay que tener en cuenta que el padding por defecto aumenta el tamaño de una caja, para que esto no suceda, se usa box-sizing: border-box. Esta propiedad se suele definir en una regla con selector universal para que todos los elementos del sitio se comporten igual. El código es:</p>
+    <p class="cuadro">* {box-sizing: border-box}</p>
+
+    <h2 id= "etolul" class="etiquetas"><strong>Margin:</strong></h2>
+    <p>Es la distancia entre un elemento y otro (desde el borde de un elemento hacia afuera). Muchas etiquetas HTML tienen margin por defecto por ejemplo: el body, los encabezados, los párrafos y las listas.</p>
+
+    <h2 id= "etp" class="etiquetas"><strong>Border:</strong></h2>
+    <p>Define el borde de un elemento, su color, su estilo y grosor.</p>
